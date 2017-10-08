@@ -29,3 +29,6 @@
 2017-10-08 08:25:24,138  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2017-10-08 08:25:24,194  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
 2017-10-08 08:25:24,199  INFO SpearApplication:57 - Started SpearApplication in 4.814 seconds (JVM running for 6.092)
+2017-10-08 08:43:51,158  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Sun Oct 08 08:25:19 CST 2017]; root of context hierarchy
+2017-10-08 08:43:51,180  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-08 08:43:51,197  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown

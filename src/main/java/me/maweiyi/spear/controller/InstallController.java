@@ -14,4 +14,5 @@ public class InstallController extends BaseController {
         mv.setViewName("install");
         return mv;
     }
+
 }

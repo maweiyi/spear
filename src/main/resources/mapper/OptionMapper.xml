@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.maweiyi.spear.mapper.OptionMapper">
+    <insert id="insertOption" parameterType="Option">
+        INSERT INTO t_users(username, passwrod, screen_name, created) VALUES (#{admin_user}, #{admin_pwd}, #{admin_user})
+    </insert>
+</mapper>

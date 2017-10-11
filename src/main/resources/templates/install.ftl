@@ -7,11 +7,11 @@
     <title>Tale - 博客安装</title>
     <link href="/static/plugins/jquery.steps/demo/css/jquery.steps.css" rel="stylesheet" type="text/css">
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
     <link href="//cdn.bootcss.com/limonte-sweetalert2/6.4.1/sweetalert2.min.css" rel="stylesheet">
     <style>
         body,html {
-            background: url("/static/admin/images/bg/5.png) no-repeat;
+            background: url("/static/images/bg/5.png") no-repeat;
             background-size: cover;
         }
         .home-text {
@@ -49,7 +49,6 @@
 
 </head>
 <body>
-
 <div class="container" style="max-width: 680px;">
     <section class="home bg-dark" style="margin-top: 20px; margin-bottom: 20px;">
         <div class="container">

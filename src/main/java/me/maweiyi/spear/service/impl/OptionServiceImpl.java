@@ -15,5 +15,7 @@ public class OptionServiceImpl implements OptionService {
     @Override
     public void insertOption(Option option) {
 
+        System.out.println(option);
+        mapper.insertOption(option);
     }
 }

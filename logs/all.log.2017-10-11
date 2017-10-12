@@ -1,0 +1,662 @@
+2017-10-11 09:43:49,854  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Tue Oct 10 22:17:23 CST 2017]; root of context hierarchy
+2017-10-11 09:43:49,952  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 09:43:49,976  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 16:04:23,003  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 6176 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 16:04:23,009  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 16:04:23,156  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 16:04:23 CST 2017]; root of context hierarchy
+2017-10-11 16:04:23,367  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 16:04:24,182  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 16:04:24,257  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 16:04:24,415  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 16:04:25,477  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 16:04:25,598  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2448 ms
+2017-10-11 16:04:25,868  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 16:04:25,873  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 16:04:25,873  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 16:04:25,873  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 16:04:25,874  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 16:04:25,874  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 16:04:26,762  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 16:04:23 CST 2017]; root of context hierarchy
+2017-10-11 16:04:26,841  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 16:04:26,843  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 16:04:26,844  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 16:04:26,847  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 16:04:26,847  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 16:04:26,875  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 16:04:26,875  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 16:04:26,875  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 16:04:26,906  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 16:04:27,167  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 16:04:27,359  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 16:04:27,369  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 16:04:27,387  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 16:04:27,436  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 16:04:27,441  INFO SpearApplication:57 - Started SpearApplication in 5.041 seconds (JVM running for 6.558)
+2017-10-11 17:45:08,521  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 16:04:23 CST 2017]; root of context hierarchy
+2017-10-11 17:45:08,524  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 17:45:08,528  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 19:43:49,908  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 12228 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 19:43:49,912  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 19:43:50,148  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:43:50 CST 2017]; root of context hierarchy
+2017-10-11 19:43:50,310  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 19:43:51,155  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 19:43:51,305  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 19:43:51,471  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 19:43:52,443  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 19:43:52,633  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2495 ms
+2017-10-11 19:43:53,018  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 19:43:53,022  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 19:43:53,023  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 19:43:53,024  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 19:43:53,024  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 19:43:53,025  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 19:43:53,866  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:43:50 CST 2017]; root of context hierarchy
+2017-10-11 19:43:53,918  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 19:43:53,919  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 19:43:53,921  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 19:43:53,923  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 19:43:53,923  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 19:43:53,951  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:43:53,952  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:43:53,952  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:43:53,982  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:43:54,384  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 19:43:54,587  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 19:43:54,602  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 19:43:54,635  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 19:43:54,694  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 19:43:54,700  INFO SpearApplication:57 - Started SpearApplication in 5.472 seconds (JVM running for 6.871)
+2017-10-11 19:44:44,242  WARN RedisMessageListenerContainer:877 - Error closing subscription connection
+org.springframework.data.redis.RedisConnectionFailureException: Unexpected end of stream.; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:336)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.closeConnection(RedisMessageListenerContainer.java:875)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.handleSubscriptionException(RedisMessageListenerContainer.java:644)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.run(RedisMessageListenerContainer.java:756)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:199)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.BinaryJedis.quit(BinaryJedis.java:253)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:326)
+	... 4 more
+2017-10-11 19:44:44,247 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:44:49,254  WARN RedisMessageListenerContainer:877 - Error closing subscription connection
+org.springframework.data.redis.RedisConnectionFailureException: java.net.ConnectException: Connection refused (Connection refused); nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:336)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.closeConnection(RedisMessageListenerContainer.java:875)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.handleSubscriptionException(RedisMessageListenerContainer.java:644)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.run(RedisMessageListenerContainer.java:756)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:126)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:121)
+	at redis.clients.jedis.BinaryClient.quit(BinaryClient.java:124)
+	at redis.clients.jedis.BinaryJedis.quit(BinaryJedis.java:252)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:326)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 10 more
+2017-10-11 19:44:49,257 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:44:54,267 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:44:59,272 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:45:00,006 ERROR TaskUtils$LoggingErrorHandler:95 - Unexpected error occurred in scheduled task.
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131)
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 25 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 35 more
+2017-10-11 19:45:04,276 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:45:09,281 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:45:14,290 ERROR RedisMessageListenerContainer:647 - Connection failure occurred. Restarting subscription task after 5000 ms
+2017-10-11 19:45:21,430  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:43:50 CST 2017]; root of context hierarchy
+2017-10-11 19:45:21,434  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 19:45:21,437  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 19:45:24,494  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 12321 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 19:45:24,499  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 19:45:24,571  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:45:24 CST 2017]; root of context hierarchy
+2017-10-11 19:45:24,802  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 19:45:25,731  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 19:45:26,139  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 19:45:26,267  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 19:45:27,111  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 19:45:27,384  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2816 ms
+2017-10-11 19:45:27,681  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 19:45:27,684  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 19:45:27,685  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 19:45:27,685  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 19:45:27,686  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 19:45:27,686  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 19:45:28,341  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:45:24 CST 2017]; root of context hierarchy
+2017-10-11 19:45:28,382  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 19:45:28,385  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 19:45:28,385  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 19:45:28,387  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 19:45:28,388  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 19:45:28,414  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:45:28,414  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:45:28,414  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:45:28,445  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 19:45:28,763  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 19:45:28,934  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 19:45:28,941  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 19:45:28,951  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 19:45:29,015  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 19:45:29,020  INFO SpearApplication:57 - Started SpearApplication in 4.808 seconds (JVM running for 6.066)
+2017-10-11 20:23:41,275  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 20:23:41,292  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-10-11 20:23:41,448  WARN PageNotFound:215 - Request method 'GET' not supported
+2017-10-11 20:24:23,264  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-10-11 20:24:23,297  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-10-11 20:24:23,301 ERROR InstallController:35 - 安装时发生服务器内部错误
+2017-10-11 20:24:39,556 ERROR InstallController:35 - 安装时发生服务器内部错误
+2017-10-11 20:28:16,113  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 19:45:24 CST 2017]; root of context hierarchy
+2017-10-11 20:28:16,119  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 20:28:16,124  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 20:28:22,695  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 12442 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 20:28:22,698  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 20:28:22,772  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:28:22 CST 2017]; root of context hierarchy
+2017-10-11 20:28:22,963  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 20:28:23,865  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 20:28:24,017  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 20:28:24,119  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 20:28:24,938  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 20:28:25,020  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2252 ms
+2017-10-11 20:28:25,304  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 20:28:25,309  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 20:28:25,309  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 20:28:25,310  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 20:28:25,310  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 20:28:25,310  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 20:28:25,990  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:28:22 CST 2017]; root of context hierarchy
+2017-10-11 20:28:26,033  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 20:28:26,035  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 20:28:26,036  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 20:28:26,038  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 20:28:26,039  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 20:28:26,067  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:28:26,067  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:28:26,067  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:28:26,098  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:28:26,389  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 20:28:26,700  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 20:28:26,715  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 20:28:26,741  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 20:28:26,792  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 20:28:26,797  INFO SpearApplication:57 - Started SpearApplication in 4.445 seconds (JVM running for 5.79)
+2017-10-11 20:29:20,380  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 20:29:20,394  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-10-11 20:29:20,917  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-10-11 20:29:20,950  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-10-11 20:29:20,954 ERROR InstallController:35 - 安装时发生服务器内部错误
+2017-10-11 20:57:27,468 ERROR InstallController:35 - 安装时发生服务器内部错误
+2017-10-11 20:57:36,427  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:28:22 CST 2017]; root of context hierarchy
+2017-10-11 20:57:36,440  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 20:57:36,445  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 20:57:40,710  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 12533 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 20:57:40,713  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 20:57:40,900  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:57:40 CST 2017]; root of context hierarchy
+2017-10-11 20:57:41,113  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 20:57:42,428  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 20:57:42,488  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 20:57:42,550  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 20:57:43,411  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 20:57:43,566  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2671 ms
+2017-10-11 20:57:43,943  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 20:57:43,947  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 20:57:43,947  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 20:57:43,947  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 20:57:43,948  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 20:57:43,948  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 20:57:44,653  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:57:40 CST 2017]; root of context hierarchy
+2017-10-11 20:57:44,698  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 20:57:44,700  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 20:57:44,702  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 20:57:44,704  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 20:57:44,704  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 20:57:44,730  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:57:44,731  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:57:44,731  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:57:44,762  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 20:57:45,087  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 20:57:45,243  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 20:57:45,249  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 20:57:45,258  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 20:57:45,310  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 20:57:45,316  INFO SpearApplication:57 - Started SpearApplication in 5.323 seconds (JVM running for 6.934)
+2017-10-11 20:57:49,197  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 20:57:49,210  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-10-11 20:57:49,622  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-10-11 20:57:49,654  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-10-11 20:57:49,656 ERROR InstallController:35 - 安装时发生服务器内部错误
+2017-10-11 21:00:10,696  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 20:57:40 CST 2017]; root of context hierarchy
+2017-10-11 21:00:10,700  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 21:00:10,704  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 21:00:14,533  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 12600 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 21:00:14,537  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 21:00:14,705  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:00:14 CST 2017]; root of context hierarchy
+2017-10-11 21:00:14,828  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 21:00:16,016  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 21:00:16,095  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 21:00:16,169  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 21:00:16,970  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 21:00:17,141  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2440 ms
+2017-10-11 21:00:17,481  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 21:00:17,484  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 21:00:17,485  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 21:00:17,486  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 21:00:17,486  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 21:00:17,486  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 21:00:18,095  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:00:14 CST 2017]; root of context hierarchy
+2017-10-11 21:00:18,136  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 21:00:18,138  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 21:00:18,139  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 21:00:18,141  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 21:00:18,142  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 21:00:18,167  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:00:18,168  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:00:18,168  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:00:18,195  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:00:18,482  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 21:00:18,636  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 21:00:18,642  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 21:00:18,653  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 21:00:18,704  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 21:00:18,723  INFO SpearApplication:57 - Started SpearApplication in 4.674 seconds (JVM running for 6.135)
+2017-10-11 21:02:01,896  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 21:02:02,056  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 159 ms
+2017-10-11 21:42:34,480  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:00:14 CST 2017]; root of context hierarchy
+2017-10-11 21:42:34,496  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 21:42:34,504  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 21:42:41,562  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 14607 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 21:42:41,568  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 21:42:41,641  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:42:41 CST 2017]; root of context hierarchy
+2017-10-11 21:42:41,854  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 21:42:43,152  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 21:42:43,206  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 21:42:43,261  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 21:42:44,077  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 21:42:44,166  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2529 ms
+2017-10-11 21:42:44,520  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 21:42:44,523  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 21:42:44,524  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 21:42:44,524  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 21:42:44,525  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 21:42:44,525  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 21:42:45,124  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:42:41 CST 2017]; root of context hierarchy
+2017-10-11 21:42:45,176  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 21:42:45,179  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 21:42:45,181  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 21:42:45,184  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 21:42:45,184  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 21:42:45,211  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:42:45,211  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:42:45,211  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:42:45,239  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 21:42:45,563  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 21:42:45,815  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 21:42:45,824  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 21:42:45,838  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 21:42:45,888  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 21:42:45,895  INFO SpearApplication:57 - Started SpearApplication in 4.815 seconds (JVM running for 6.386)
+2017-10-11 21:42:53,456  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 21:42:53,472  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-10-11 22:04:04,334  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 21:42:41 CST 2017]; root of context hierarchy
+2017-10-11 22:04:04,349  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:04:04,358  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:04:08,338  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 14778 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:04:08,373  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:04:08,519  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:04:08 CST 2017]; root of context hierarchy
+2017-10-11 22:04:08,694  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:04:10,969  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:04:11,102  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:04:11,173  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:04:12,543  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:04:12,660  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 4144 ms
+2017-10-11 22:04:13,047  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:04:13,050  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:04:13,051  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:04:13,051  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:04:13,051  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:04:13,051  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:04:13,749  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:04:08 CST 2017]; root of context hierarchy
+2017-10-11 22:04:13,798  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:04:13,800  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:04:13,801  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:04:13,804  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:04:13,804  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:04:13,830  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:04:13,830  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:04:13,831  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:04:13,870  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:04:14,163  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:04:14,341  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:04:14,348  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:04:14,359  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:04:14,440  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:04:14,451  INFO SpearApplication:57 - Started SpearApplication in 6.761 seconds (JVM running for 8.161)
+2017-10-11 22:04:30,276  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:04:30,290  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-10-11 22:06:33,030  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:04:08 CST 2017]; root of context hierarchy
+2017-10-11 22:06:33,031  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:06:33,034  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:06:35,479  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 14857 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:06:35,481  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:06:35,554  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:06:35 CST 2017]; root of context hierarchy
+2017-10-11 22:06:35,774  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:06:37,030  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:06:37,142  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:06:37,235  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:06:38,208  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:06:38,314  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2767 ms
+2017-10-11 22:06:38,661  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:06:38,664  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:06:38,664  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:06:38,665  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:06:38,665  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:06:38,665  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:06:39,263  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:06:35 CST 2017]; root of context hierarchy
+2017-10-11 22:06:39,304  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:06:39,306  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:06:39,308  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:06:39,310  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:06:39,311  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:06:39,338  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:06:39,338  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:06:39,338  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:06:39,366  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:06:39,643  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:06:39,796  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:06:39,803  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:06:39,812  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:06:39,852  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:06:39,862  INFO SpearApplication:57 - Started SpearApplication in 4.772 seconds (JVM running for 5.611)
+2017-10-11 22:06:45,194  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:06:45,209  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-10-11 22:13:23,360  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:06:35 CST 2017]; root of context hierarchy
+2017-10-11 22:13:23,376  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:13:23,382  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:13:27,180  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 14947 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:13:27,182  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:13:27,248  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:13:27 CST 2017]; root of context hierarchy
+2017-10-11 22:13:27,410  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:13:28,364  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:13:28,532  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:13:28,643  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:13:29,482  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:13:29,583  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2344 ms
+2017-10-11 22:13:29,911  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:13:29,915  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:13:29,915  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:13:29,915  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:13:29,916  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:13:29,916  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:13:30,578  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:13:27 CST 2017]; root of context hierarchy
+2017-10-11 22:13:30,618  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:13:30,620  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:13:30,622  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:13:30,625  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:13:30,625  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:13:30,655  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:13:30,656  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:13:30,656  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:13:30,688  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:13:31,008  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:13:31,183  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:13:31,191  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:13:31,202  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:13:31,290  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:13:31,297  INFO SpearApplication:57 - Started SpearApplication in 4.401 seconds (JVM running for 5.664)
+2017-10-11 22:13:40,974  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:13:40,997  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-10-11 22:14:57,929  WARN PageNotFound:215 - Request method 'GET' not supported
+2017-10-11 22:17:59,540  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:13:27 CST 2017]; root of context hierarchy
+2017-10-11 22:17:59,551  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:17:59,558  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:18:02,510  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 14992 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:18:02,514  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:18:02,579  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:18:02 CST 2017]; root of context hierarchy
+2017-10-11 22:18:02,863  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:18:04,175  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:18:04,234  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:18:04,277  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:18:05,038  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:18:05,140  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2568 ms
+2017-10-11 22:18:05,464  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:18:05,468  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:18:05,468  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:18:05,469  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:18:05,469  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:18:05,469  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:18:06,054  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:18:02 CST 2017]; root of context hierarchy
+2017-10-11 22:18:06,095  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:18:06,097  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:18:06,098  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:18:06,100  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:18:06,101  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:18:06,127  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:18:06,128  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:18:06,128  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:18:06,156  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:18:06,440  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:18:06,590  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:18:06,596  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:18:06,606  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:18:06,654  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:18:06,661  INFO SpearApplication:57 - Started SpearApplication in 4.405 seconds (JVM running for 5.612)
+2017-10-11 22:18:13,377  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:18:13,391  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-10-11 22:18:27,696  WARN PageNotFound:215 - Request method 'GET' not supported
+2017-10-11 22:19:55,122  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:18:02 CST 2017]; root of context hierarchy
+2017-10-11 22:19:55,125  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:19:55,136  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:19:57,733  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 15010 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:19:57,737  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:19:57,850  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:19:57 CST 2017]; root of context hierarchy
+2017-10-11 22:19:58,224  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:19:59,659  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:19:59,725  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:19:59,765  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:20:00,615  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:20:00,752  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2908 ms
+2017-10-11 22:20:01,077  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:20:01,087  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:20:01,087  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:20:01,088  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:20:01,088  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:20:01,089  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:20:01,771  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:19:57 CST 2017]; root of context hierarchy
+2017-10-11 22:20:01,815  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:20:01,817  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:20:01,819  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:20:01,821  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:20:01,822  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:20:01,854  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:20:01,855  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:20:01,855  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:20:01,887  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:20:02,241  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:20:02,427  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:20:02,434  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:20:02,444  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:20:02,499  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:20:02,504  INFO SpearApplication:57 - Started SpearApplication in 5.133 seconds (JVM running for 6.03)
+2017-10-11 22:26:26,438  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:26:26,457  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-10-11 22:26:38,183  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:19:57 CST 2017]; root of context hierarchy
+2017-10-11 22:26:38,186  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 22:26:38,190  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 22:26:40,937  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 15036 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 22:26:40,939  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 22:26:41,027  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:26:41 CST 2017]; root of context hierarchy
+2017-10-11 22:26:41,240  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 22:26:42,655  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 22:26:42,688  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 22:26:42,742  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 22:26:43,590  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 22:26:43,680  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2657 ms
+2017-10-11 22:26:44,101  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 22:26:44,104  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 22:26:44,105  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 22:26:44,105  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 22:26:44,106  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 22:26:44,106  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 22:26:44,705  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:26:41 CST 2017]; root of context hierarchy
+2017-10-11 22:26:44,757  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 22:26:44,758  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 22:26:44,760  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 22:26:44,761  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 22:26:44,762  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 22:26:44,786  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:26:44,787  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:26:44,787  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:26:44,814  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 22:26:45,064  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 22:26:45,314  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 22:26:45,323  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 22:26:45,337  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 22:26:45,391  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 22:26:45,395  INFO SpearApplication:57 - Started SpearApplication in 4.868 seconds (JVM running for 5.895)
+2017-10-11 22:26:58,936  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 22:26:58,961  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2017-10-11 23:03:37,438  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 22:26:41 CST 2017]; root of context hierarchy
+2017-10-11 23:03:37,459  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 23:03:37,466  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 23:03:43,779  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 16675 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 23:03:43,782  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 23:03:43,914  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 23:03:43 CST 2017]; root of context hierarchy
+2017-10-11 23:03:44,044  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 23:03:45,336  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 23:03:45,405  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 23:03:45,461  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 23:03:46,295  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 23:03:46,415  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2505 ms
+2017-10-11 23:03:46,769  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 23:03:46,772  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 23:03:46,773  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 23:03:46,773  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 23:03:46,773  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 23:03:46,773  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 23:03:47,434  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 23:03:43 CST 2017]; root of context hierarchy
+2017-10-11 23:03:47,475  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 23:03:47,477  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 23:03:47,479  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 23:03:47,481  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 23:03:47,481  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 23:03:47,507  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:03:47,508  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:03:47,508  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:03:47,541  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:03:47,814  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 23:03:47,975  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 23:03:47,983  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 23:03:47,994  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 23:03:48,048  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 23:03:48,054  INFO SpearApplication:57 - Started SpearApplication in 4.819 seconds (JVM running for 6.251)
+2017-10-11 23:04:01,104  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 23:04:01,118  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-10-11 23:04:25,659  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 23:03:43 CST 2017]; root of context hierarchy
+2017-10-11 23:04:25,661  INFO DefaultLifecycleProcessor:358 - Stopping beans in phase 2147483647
+2017-10-11 23:04:25,663  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-10-11 23:04:46,989  INFO SpearApplication:48 - Starting SpearApplication on maweiyideMackBook-Pro with PID 16693 (/Users/maweiyi/WriteCode/spear/target/classes started by maweiyi in /Users/maweiyi/WriteCode/spear)
+2017-10-11 23:04:46,992  INFO SpearApplication:593 - No active profile set, falling back to default profiles: default
+2017-10-11 23:04:47,067  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 23:04:47 CST 2017]; root of context hierarchy
+2017-10-11 23:04:47,292  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 23:04:48,140  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2017-10-11 23:04:48,179  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 23:04:48,254  INFO DefaultListableBeanFactory:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2017-10-11 23:04:49,137  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-10-11 23:04:49,304  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2240 ms
+2017-10-11 23:04:49,641  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 23:04:49,645  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 23:04:49,646  INFO FilterRegistrationBean:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-10-11 23:04:49,646  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 23:04:49,646  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 23:04:49,647  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 23:04:50,318  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74294adb: startup date [Wed Oct 11 23:04:47 CST 2017]; root of context hierarchy
+2017-10-11 23:04:50,361  INFO RequestMappingHandlerMapping:543 - Mapped "{[/index]}" onto public java.lang.String me.maweiyi.spear.controller.IndexController.index()
+2017-10-11 23:04:50,363  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView me.maweiyi.spear.controller.InstallController.install()
+2017-10-11 23:04:50,364  INFO RequestMappingHandlerMapping:543 - Mapped "{[/install],methods=[POST]}" onto public me.maweiyi.spear.R me.maweiyi.spear.controller.InstallController.doInstall(me.maweiyi.spear.domain.Option)
+2017-10-11 23:04:50,366  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 23:04:50,367  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 23:04:50,394  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:04:50,394  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:04:50,395  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:04:50,425  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 23:04:50,762  INFO FreeMarkerConfigurer:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-11 23:04:50,969  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-10-11 23:04:50,991  INFO DefaultLifecycleProcessor:343 - Starting beans in phase 2147483647
+2017-10-11 23:04:51,012  INFO ScheduledAnnotationBeanPostProcessor:262 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-11 23:04:51,062  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-10-11 23:04:51,069  INFO SpearApplication:57 - Started SpearApplication in 4.503 seconds (JVM running for 5.237)
+2017-10-11 23:04:56,427  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 23:04:56,447  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms

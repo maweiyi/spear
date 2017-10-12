@@ -10,23 +10,25 @@ public class R extends HashMap<String, Object> {
         put("code", 0);
     }
 
-    public static R error() {
-        return error(500, "未知异常，请联系管理员");
+    public static R error(Boolean result) {
+        return error(500, "未知异常，请联系管理员", result);
     }
 
-    public static R error(String msg) {
-        return error(500, msg);
+    public static R error(String msg, Boolean result) {
+        return error(500, msg, result);
     }
 
-    public static R error(int code, String msg) {
+    public static R error(int code, String msg, Boolean result) {
         R r = new R();
         r.put("code", code);
         r.put("msg", msg);
+        r.put("success", result);
         return r;
     }
-    public static R ok(String msg) {
+    public static R ok(String msg, Boolean result) {
         R r = new R();
         r.put("msg", msg);
+        r.put("success", result);
         return r;
     }
 

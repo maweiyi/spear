@@ -6,5 +6,7 @@
 </head>
 <body>
 <h1>MWYS</h1>
+<#assign me="SSSS">
+<#include "./a1.ftl">
 </body>
 </html>

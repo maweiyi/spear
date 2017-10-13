@@ -1,4 +1,4 @@
-#include('./header.html',{active:'home', title:'管理中心'})
+<#include "./header.ftl">
 <div class="row">
     <div class="col-sm-12">
         <h4 class="page-title">Tale仪表盘</h4>
@@ -32,7 +32,6 @@
         </div>
 
     </div>
-
     <div class="row">
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -41,13 +40,13 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        #for(article : articles)
+                        <#list  [1, 2] as a>
                         <li class="list-group-item">
                             <span class="badge badge-primary"
-                                  title="${article.commentsNum}条评论">${article.commentsNum}</span>
-                            <a target="_blank" href="${site_url('/article/')}${article.cid}">${article.title}</a>
+                                  title="0条评论">0</span>
+                            <a target="_blank" href="/article">第一篇文章</a>
                         </li>
-                        #end
+                        </#list>
                     </ul>
                 </div>
             </div>
@@ -58,24 +57,9 @@
                     <h4 class="panel-title">最新留言</h4>
                 </div>
                 <div class="panel-body">
-                    #if(null == comments || comments.size() == 0)
                     <div class="alert alert-warning">
                         还没有收到留言.
                     </div>
-                    #else
-                    <ul class="list-group">
-                        #for(comment : comments)
-                        <li class="list-group-item">
-                            #if(null != comment.url && comment.url != '')
-                            <a href="${comment.url}" target="_blank">${comment.author}</a>
-                            #else
-                            ${comment.author}
-                            #end
-                            于${fmtdate(comment.created,'MM月dd日HH:mm')} ：<a href="${site_url('/article/')}${comment.cid}#comments" target="_blank">${article(comment.content)}</a>
-                        </li>
-                        #end
-                    </ul>
-                    #end
                 </div>
             </div>
         </div>
@@ -86,17 +70,18 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        #for(log : logs)
+                        <#list [1, 2] as a>
                         <li class="list-group-item">
-                            <span>${fmtdate(log.created, 'yyyy-MM-dd HH:mm:ss')} => ${log.action}</span>
+                            <span>日志</span>
                         </li>
-                        #end
+                        </#list>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
-#include('./footer.html')
+<#include "./footer.ftl">
 </body>
 </html>

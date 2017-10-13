@@ -109,6 +109,7 @@
             url: '/admin/login',
             data: $("#loginForm").serialize(),
             success: function (result) {
+                console.log("DFDFDFDFD")
                 if (result && result.success) {
                     window.location.href = '/admin/index';
                 } else {

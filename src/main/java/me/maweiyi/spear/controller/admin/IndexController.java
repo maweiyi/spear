@@ -22,4 +22,8 @@ public class IndexController {
         mv.addObject("statistics", map);
         return mv;
     }
+
+
+
+
 }

@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
+
+@SuppressWarnings("ALL")
 @Controller
 @RequestMapping("/admin")
 public class AuthController extends BaseController {

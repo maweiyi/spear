@@ -3,5 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="me.maweiyi.spear.mapper.SiteMapper">
-
+    <select id="staticComment" resultType="Comments">
+        SELECT * FROM t_comments;
+    </select>
+    <select id="staticContent" resultType="Contents">
+        SELECT * FROM t_contents;
+    </select>
 </mapper>

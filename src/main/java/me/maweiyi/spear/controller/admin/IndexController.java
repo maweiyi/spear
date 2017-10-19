@@ -22,10 +22,12 @@ public class IndexController {
 
         ModelAndView mv = new ModelAndView("admin/index");
         Integer commentCount = siteService.staticComments();
+        Integer contentCount = siteService.staticContents();
+        Integer attachCount = siteService.staticAttach();
         Map map = new HashMap();
-        map.put("articles", 0);
+        map.put("articles", contentCount);
         map.put("comments", commentCount);
-        map.put("attachs", 0);
+        map.put("attachs", attachCount);
         mv.addObject("statistics", map);
 
         return mv;

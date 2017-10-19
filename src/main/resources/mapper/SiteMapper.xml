@@ -9,4 +9,10 @@
     <select id="staticContent" resultType="Contents">
         SELECT * FROM t_contents;
     </select>
+    <select id="staticAttach" resultType="Attach">
+        SELECT * FROM t_attach;
+    </select>
+    <select id="content" resultType="Contents">
+        SELECT * FROM t_contents ORDER BY created DESC LIMIT 5
+    </select>
 </mapper>

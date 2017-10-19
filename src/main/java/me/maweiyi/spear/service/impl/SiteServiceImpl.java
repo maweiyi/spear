@@ -1,5 +1,6 @@
 package me.maweiyi.spear.service.impl;
 
+import me.maweiyi.spear.domain.Attach;
 import me.maweiyi.spear.domain.Comments;
 import me.maweiyi.spear.domain.Contents;
 import me.maweiyi.spear.mapper.SiteMapper;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 @Service
 public class SiteServiceImpl implements SiteService {
@@ -24,6 +26,17 @@ public class SiteServiceImpl implements SiteService {
     public Integer staticContents() {
         List<Contents> contents = siteMapper.staticContent();
         return contents.size();
+    }
+
+    @Override
+    public Integer staticAttach() {
+        List<Attach> attaches = siteMapper.staticAttach();
+        return attaches.size();
+    }
+
+    @Override
+    public List<Contents> contentTitle() {
+        return null;
     }
 
 

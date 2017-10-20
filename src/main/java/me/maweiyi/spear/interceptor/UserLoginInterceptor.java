@@ -11,7 +11,6 @@ public class UserLoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         //查询redis中是否有用户的session,如果没有跳转到登录页面,如果有直接跳转到首页
         String user = (String) httpServletRequest.getSession().getAttribute("user");
-        System.out.println(user);
         if (user == null) {
             httpServletResponse.sendRedirect("/admin/login");
             return false;

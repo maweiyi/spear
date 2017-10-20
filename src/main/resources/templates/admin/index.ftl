@@ -13,14 +13,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="mini-stat clearfix bg-purple bx-shadow">
-                <span class="mini-stat-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
-                <div class="mini-stat-info text-right">
-                    收到了<span class="counter">${statistics.comments}</span>条留言
-                </div>
-            </div>
-        </div>
 
         <div class="col-sm-6 col-lg-3">
             <div class="mini-stat clearfix bg-success bx-shadow">
@@ -40,26 +32,12 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        <#list  [1, 2] as a>
+                        <#list articles as article>
                         <li class="list-group-item">
-                            <span class="badge badge-primary"
-                                  title="0条评论">0</span>
-                            <a target="_blank" href="/article">第一篇文章</a>
+                            <a target="_blank" href="/article">${article.title}</a>
                         </li>
                         </#list>
                     </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">最新留言</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-warning">
-                        还没有收到留言.
-                    </div>
                 </div>
             </div>
         </div>

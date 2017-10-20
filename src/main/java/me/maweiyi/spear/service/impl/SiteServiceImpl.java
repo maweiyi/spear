@@ -13,7 +13,6 @@ import java.util.List;
 
 @Service
 public class SiteServiceImpl implements SiteService {
-    //统计留言
     @Autowired
     private SiteMapper siteMapper;
 
@@ -36,7 +35,14 @@ public class SiteServiceImpl implements SiteService {
 
     @Override
     public List<Contents> contentTitle() {
-        return null;
+        List<Contents> contents = siteMapper.content();
+        return contents;
+    }
+
+    @Override
+    public List<Comments> comment() {
+        List<Comments> comments = siteMapper.comment();
+        return comments;
     }
 
 

@@ -15,4 +15,7 @@
     <select id="content" resultType="Contents">
         SELECT * FROM t_contents ORDER BY created DESC LIMIT 5
     </select>
+    <select id="comment" resultType="Comments">
+        SELECT * FROM t_comments ORDER BY created DESC LIMIT 5
+    </select>
 </mapper>

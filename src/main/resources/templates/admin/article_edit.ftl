@@ -1,12 +1,12 @@
 <#include "./header.ftl">
-<link href="/static/plugins/tagsinput/jquery.tagsinput.css" rel="stylesheet">
-<link href="/static/plugins/select2/dist/css/select2-bootstrap.css" rel="stylesheet">
-<link href="/static/plugins/toggles/toggles.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/multi-select/0.9.12/css/multi-select.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/select2/3.4.8/select2.min.css" rel="stylesheet">
-<link href="//o7d6mdbet.qnssl.com/mditor/css/mditor.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/summernote/0.8.2/summernote.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/dropzone/4.3.0/min/dropzone.min.css" rel="stylesheet">
+<link href="/static/plugins/tagsinput/jquery.tagsinput.css" rel="stylesheet"/>
+<link href="/static/plugins/select2/select2-bootstrap.css" rel="stylesheet"/>
+<link href="/static/plugins/toggles/toggles.css" rel="stylesheet"/>
+<link href="//cdn.bootcss.com/multi-select/0.9.12/css/multi-select.min.css" rel="stylesheet"/>
+<link href="//cdn.bootcss.com/select2/3.4.8/select2.min.css" rel="stylesheet"/>
+<link href="//o7d6mdbet.qnssl.com/mditor/css/mditor.min.css" rel="stylesheet"/>
+<link href="//cdn.bootcss.com/summernote/0.8.2/summernote.css" rel="stylesheet"/>
+<link href="//cdn.bootcss.com/dropzone/4.3.0/min/dropzone.min.css" rel="stylesheet"/>
 <style rel="stylesheet">
     #tags_tagsinput {
         background-color: #fafafa;
@@ -76,6 +76,7 @@
 <div class="row">
     <div class="col-sm-12">
         <h4 class="page-title">
+            发布文章
         </h4>
     </div>
     <div class="col-md-12">
@@ -85,28 +86,28 @@
         <form id="articleForm">
 
             <div class="form-group col-md-6" style="padding: 0 10px 0 0;">
+                <input class="form-control" placeholder="请输入文章标题（必须）" name="title" required/>
             </div>
 
             <div class="form-group col-md-6" style="padding: 0 0 0 10px;">
+                <input class="form-control" placeholder="自定义访问路径，如：my-first-article  默认为文章id" name="slug"/>
             </div>
 
             <div class="form-group col-md-6" style="padding: 0 10px 0 0;">
+                <input name="tags" id="tags" type="text" class="form-control" placeholder="请填写文章标签"/>
             </div>
 
-            <div class="form-group col-md-6">
-                <select id="multiple-sel" class="select2 form-control" multiple="multiple" data-placeholder="请选择分类...">
-                </select>
-            </div>
             <div class="clearfix"></div>
 
             <div class="form-group col-xs-12">
                 <div class="pull-right">
+
+                    <a id="switch-btn" href="javascript:void(0)" class="btn btn-purple btn-sm waves-effect waves-light switch-editor">切换为Markdown编辑器</a>
                 </div>
             </div>
 
             <div id="md-container" class="form-group col-md-12">
-            </div>
-            <div id="html-container" class="form-group col-md-12">
+                <textarea id="md-editor" class=""></textarea>
             </div>
 
             <div class="form-group col-md-3 col-sm-4">
@@ -160,7 +161,7 @@
 <#include "./footer.ftl">
 <script src="/static/plugins/tagsinput/jquery.tagsinput.min.js"></script>
 <script src="/static/plugins/jquery-multi-select/jquery.quicksearch.js"></script>
-<script src="//o7d6mdbet.qnssl.com/mditor/js/mditor.min.js"></script>
+<script src="https://unpkg.com/mditor@1.0.5/dist/js/mditor.min.js"></script>
 <script src="//cdn.bootcss.com/wysihtml5/0.3.0/wysihtml5.min.js"></script>
 <script src="//cdn.bootcss.com/summernote/0.8.2/summernote.min.js"></script>
 <script src="//cdn.bootcss.com/summernote/0.8.2/lang/summernote-zh-CN.min.js"></script>
@@ -169,6 +170,6 @@
 <script src="//cdn.bootcss.com/jquery-toggles/2.0.4/toggles.min.js"></script>
 <script src="//cdn.bootcss.com/dropzone/4.3.0/min/dropzone.min.js"></script>
 <script src="//cdn.bootcss.com/to-markdown/3.1.0/to-markdown.min.js"></script>
-<script src="/static/js/article.js" type="text/javascript"></script>
+<script src="/static/js/article.js"></script>
 </body>
 </html>
